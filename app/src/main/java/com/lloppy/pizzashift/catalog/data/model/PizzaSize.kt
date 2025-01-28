@@ -1,4 +1,4 @@
-package com.lloppy.pizzashift.catalog.domain.entity
+package com.lloppy.pizzashift.catalog.data.model
 
 import kotlinx.serialization.Serializable
 

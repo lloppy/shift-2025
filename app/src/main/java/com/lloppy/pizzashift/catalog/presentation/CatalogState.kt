@@ -1,5 +1,4 @@
 package com.lloppy.pizzashift.catalog.presentation
-
 import com.lloppy.pizzashift.catalog.domain.entity.PizzaItem
 
 sealed interface CatalogState {
