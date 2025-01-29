@@ -21,12 +21,13 @@ fun MainScreen(
     Surface {
         NavHost(navController = navController, startDestination = CatalogRoute) {
             composable<CatalogRoute> {
-                val viewModel: CatalogViewModel = viewModel(factory = CatalogViewModelFactory(getPizzaCatalogUseCase))
+                val viewModel: CatalogViewModel =
+                    viewModel(factory = CatalogViewModelFactory(getPizzaCatalogUseCase))
                 CatalogScreen(
                     viewModel,
                     onItemSelected = {
                         //navController.navigate(DetailsRoute(loanId = it))
-                        },
+                    },
                 )
             }
         }

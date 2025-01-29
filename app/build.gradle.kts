@@ -90,4 +90,8 @@ dependencies {
     // Превью для Compose
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // glide image loading
+    implementation(libs.compose)
+
 }

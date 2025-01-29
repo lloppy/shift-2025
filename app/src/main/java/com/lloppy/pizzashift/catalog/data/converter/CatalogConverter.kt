@@ -1,15 +1,24 @@
 package com.lloppy.pizzashift.catalog.data.converter
 
 import com.lloppy.pizzashift.catalog.data.model.Catalog
+import com.lloppy.pizzashift.catalog.data.model.PizzaIngredient
 import com.lloppy.pizzashift.catalog.domain.entity.PizzaItem
 
 class CatalogConverter {
+    private val baseImageUrl = "https://shift-intensive.ru/api/"
+
     fun convert(model: Catalog): PizzaItem =
         PizzaItem(
             id = model.id.toLong(),
             name = model.name,
             ingredients = model.ingredients,
-            toppings = model.toppings,
+            toppings = model.toppings.map {ingredient ->
+                PizzaIngredient(
+                    name = ingredient.name,
+                    cost = ingredient.cost,
+                    img = baseImageUrl + ingredient.img
+                )
+            },
             description = model.description,
             sizes = model.sizes,
             doughs = model.doughs,
@@ -23,6 +32,6 @@ class CatalogConverter {
             isGlutenFree = model.isGlutenFree,
             isNew = model.isNew,
             isHit = model.isHit,
-            img = model.img
+            img = baseImageUrl + model.img
         )
 }

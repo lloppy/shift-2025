@@ -3,6 +3,7 @@ package com.lloppy.pizzashift.catalog.domain.entity
 import com.lloppy.pizzashift.catalog.data.model.PizzaDough
 import com.lloppy.pizzashift.catalog.data.model.PizzaIngredient
 import com.lloppy.pizzashift.catalog.data.model.PizzaSize
+import kotlinx.serialization.Serializable
 
 data class PizzaItem(
     val id: Long,
