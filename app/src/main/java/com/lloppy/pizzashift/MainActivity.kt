@@ -4,11 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.example.shiftintensivelivecoding.NetworkModule
-import com.lloppy.pizzashift.catalog.data.converter.CatalogConverter
-import com.lloppy.pizzashift.catalog.data.network.CatalogApi
-import com.lloppy.pizzashift.catalog.data.repository.CatalogRepositoryImpl
-import com.lloppy.pizzashift.catalog.domain.usecase.GetPizzaCatalogUseCase
+import com.lloppy.feature.catalog.data.network.CatalogApi
+import com.lloppy.feature.catalog.data.repository.CatalogRepositoryImpl
+import com.lloppy.feature.catalog.domain.usecase.GetPizzaCatalogUseCase
 import com.lloppy.pizzashift.ui.theme.PizzaShiftTheme
+import com.lloppy.shared.domain.converter.CatalogConverter
 
 class MainActivity : ComponentActivity() {
 

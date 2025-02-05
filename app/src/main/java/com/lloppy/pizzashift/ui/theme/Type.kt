@@ -39,7 +39,18 @@ val Typography = Typography(
         letterSpacing = 0.em
     ),
 
-    // Paragraph 16/Medium
+    // Paragraph 16/Regular
+    titleSmall = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Normal,
+        lineHeight = 24.sp,
+        textAlign = TextAlign.Left,
+        textDecoration = TextDecoration.None,
+        letterSpacing = 0.em
+    ),
+
+    // Paragraph 12/Regular
     bodySmall = TextStyle(
         fontFamily = FontFamily.Default,
         fontSize = 12.sp,

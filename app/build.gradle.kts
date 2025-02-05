@@ -66,16 +66,15 @@ dependencies {
     // Навигация с Compose
     implementation(libs.androidx.navigation.compose)
 
-    // Работа с сетью
-    implementation(libs.retrofit.core)
-    implementation(libs.retrofit.converter.kotlinxserialization)
-    implementation(libs.okhttp.logginginterceptor)
-
     // Сериализация JSON
     implementation(libs.kotlinx.serialization.json)
 
     // Асинхронное программирование
     implementation(libs.kotlinx.coroutines.android)
+    implementation(project(":feature:catalog"))
+    implementation(project(":component"))
+    implementation(project(":feature:card"))
+    implementation(project(":shared"))
 
     // Unit-тестирование
     testImplementation(libs.junit)
@@ -91,7 +90,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // glide image loading
-    implementation(libs.compose)
+    // Работа с сетью
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.converter.kotlinxserialization)
+    implementation(libs.okhttp.logginginterceptor)
 
 }

@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "PizzaShift"
 include(":app")
- 
+include(":feature:card")
+include(":feature:catalog")
+include(":shared")
+include(":component")
